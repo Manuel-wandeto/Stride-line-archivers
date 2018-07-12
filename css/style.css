@@ -1,0 +1,333 @@
+/* Base Styles -------------------- */
+
+* {
+	box-sizing: border-box;
+}
+
+
+body {
+  color: #878787;
+  margin: 0;
+  font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* font faces*/
+
+@font-face {
+	font-family: "Mayor";
+	src: url("../media/Fonts/mayor/Mayor.ttf");
+}
+
+@font-face {
+	font-family: "Duration";
+	src: url("../media/Fonts/duration/Duration Book.ttf");
+}
+
+@font-face {
+	font-family: 'maven pro';
+	src: url("../media/Fonts/Maven_Pro/MavenPro-Medium.ttf")
+}
+@font-face {
+	font-family: philosopher;
+	src: url("../media/Fonts/Philosopher/Philosopher-Regular.ttf");
+}
+@font-face {
+	font-family: 'permanent marker';
+	src: url("../media/Fonts/Permanent_Marker/PermanentMarker-Regular.ttf");
+}
+		/*heading styles */
+h1 {  
+  font-size: 5.625rem; /* 90px/16px  */
+  font-family: 'Duration';
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  line-height: 1.3; /*1.3 * 5.625rem=7.3125rem * 16px= 117px */
+  text-shadow: 5px 6px 10px rgba(1, 1, 1, .8)
+}
+
+h2 {
+  font-family: "maven pro";
+  font-size: 3.3125em; /* 53px/16px  */
+  font-weight: normal;
+  line-height: 1.1;
+  margin-bottom: 0.5em;
+  margin-top: 20px
+}
+
+h3 {
+  font-size: 1.35em; /* 20px/16px  */
+  color: white;
+  line-height: 1.2;
+  margin-bottom: 1.7em;
+}
+		/*end of heading styles */
+img {
+	max-width: 100%;
+}
+p {
+	font-family: philosopher;
+	font-size: 1.25em;
+	letter-spacing: .05em;
+}
+
+.title {
+	color: white;
+	letter-spacing: 0.15em; /* .15em * 16px=2.4px */
+}
+
+.other-lists {
+	list-style-type: disk;
+	margin: 30px 1px;
+	letter-spacing: 1.5px;
+}
+
+.list-item {
+	margin-bottom: 5px;
+	letter-spacing: .5px;
+}
+/* Pseudo-classes ------------------ */
+
+.normal-link:link {
+  color: lightblue;
+  text-decoration: none;
+
+}
+
+.normal-link:visited {
+  color: lightblue;
+}
+
+.normal-link:hover {
+  color: rgba(255, 169, 73, .4);
+}
+
+.normal-link:active {
+  color: lightcoral;
+}
+
+.link:hover, .bottom-link:hover, .button:hover, .click-button:hover {
+	background-color: coral;
+	color: darkgreen;
+	box-shadow: 0px 8px 20px -3px rgba(0, 0, 0, .8);
+}
+.link:active, .bottom-link:active {
+	color: aqua;
+}
+
+.up-arrow:hover {
+/*	width: 55px;*/
+	fill: #D2691E;
+}
+.down-arrow:hover {
+	width: 55px;
+	fill: #D2691E
+}
+  /*clearfix */
+.group::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.nav-li:hover {
+	background: rgba(98,134,73,0.30);
+	text-shadow: 1px 2px 2px rgba(255, 169, 73, .4);
+}
+
+.nav-link:link {
+	color: #D2691E;
+}
+
+/* Nav bar styles */
+.nav-container {
+	text-align: center;
+	height: 2.5625em; /* 41px/16px=2.5625em */
+	margin-bottom: 3.75em; /* 60px/ 16px= 3.75em */
+}
+
+nav {
+	overflow: hidden;
+	display: inline-block;
+	background-image: url(../media/black_background_pattern_light_texture_55291_3840x2400.jpg);
+	background-size: 30%;
+	border-radius: 10px;
+}
+
+.nav-ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+.nav-li {
+	float: left;
+	padding: 5px 10px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-family: 'Mayor';
+	font-weight: 500;
+	border-right: 1px solid #0E8ED5;
+	color: #D2691E;
+}
+
+.nav-link {
+	text-decoration: none;
+}
+
+/* icon styles*/
+.icon-containers {
+	display: inline-block;
+}
+
+.home-icon, .About-icon, .Tours-icon, .Contact-icon {
+	fill: white;
+	max-height: 30px;
+	display: inline-block;
+	width: 20px;
+	padding: 7px 2px 0px;
+}
+
+/* Main Styles --------------------- */
+
+.main-header {
+  padding-top: 190px;
+  height: 850px;
+  background: 	linear-gradient(black -5%, transparent 40%),
+	            linear-gradient(to top, white, transparent 40%),
+	   			url(../media/img/mountain-landscape-2031539.jpg) center /cover;
+}
+
+.introduction-paragraph {
+	height: 450px;
+	background:  linear-gradient(to top, white 0%, transparent 50%),
+		         linear-gradient(to bottom, white 0%, transparent 100%),
+		         linear-gradient(to right, white 10%, transparent 80%),
+		         url("../media/img/wolf-1341881.jpg") no-repeat center / cover;
+}
+
+.intro {
+  font-size: 1.25em; /* 20px/16px */
+  line-height: 1.6; 
+  padding-left: 15px;
+  padding-top: 40px;
+  padding-right: 10px;
+}
+
+
+.link {
+	margin-top: 80px;
+}
+
+.intro-container {
+	display: inline-block;
+	width: 65%;
+	text-align: center;
+}
+
+.primary-content {
+	width: 60%;
+	margin: auto;
+}
+
+.wildlife {
+	width: 100%;
+	height: 640px;
+	background: linear-gradient(black 0%, transparent 100%),
+		        url("../media/img/animal-1283347.jpg") no-repeat center / cover;
+	color: white;
+	margin: 105px 0px 60px;
+	padding: 18% 20%;
+	border-radius: 50px 10px;
+	border-top: 7px solid rgba(191,141,17,1.00);
+	box-shadow: 15px 15px 50px -5px black;
+}
+
+
+
+.second-section {
+	height: 750px;
+	background: linear-gradient(white 0%, transparent 50%),
+		        linear-gradient(to right, white -10%, transparent 40%),
+		        linear-gradient(to left, white -10%, transparent 40%),
+		        linear-gradient(to top, white 0%, transparent 100%),
+		        url("../media/img/ocean-918998.jpg") no-repeat center / cover;
+}
+
+.secondary-content {
+	height: 800px;
+	background: linear-gradient(white 0%, transparent 30%),
+		        linear-gradient(to top, white 0%, transparent 30%),
+		        url("../media/img/terrace-1030758.jpg") no-repeat center / cover;
+}
+
+
+.main-header,
+.main-footer,
+.About-header,
+.Tour-header,
+.contact-header {
+  text-align: center;
+}
+
+.main-footer {
+  padding: 60px 0px 55px; /* 60px/16px= 3.75em */
+  border-bottom: 10px solid #ffa949;
+}
+
+
+/* Layout Styles ------------------ */
+
+.link, .bottom-link, .button, .click-button {
+	display: inline-block;
+	font-size: 1.25em;
+	background-color: chocolate;
+	color: white;
+	text-decoration: none;
+	border-radius: 10px;
+	padding: 10px 30px;
+}
+
+.bottom-link {
+		margin: 20px 0 30px;
+}
+
+
+
+
+.up-arrow {
+	width: 50px;
+	fill: black;
+}
+
+.down-arrow {
+	width: 50px;
+	fill: white;
+}
+
+/* floated content ------------------ */
+
+.resorts,
+.travel-tips {
+	width: 40%;
+	border-radius: 30px 10px;
+	background: rgba(31,31,31,0.70);
+	box-shadow: 5px 15px 50px -5px black;
+}
+
+.resorts {
+	float: left;
+	color: white;
+	margin: 160px 20px 0px 50px;
+	padding: 6% 5%;
+}
+
+.travel-tips {
+	float: right;
+	color: white;
+	margin: 160px 50px 0px 20px; 
+	padding: 5% 5%;
+}
+
+/*end of floated content*/
+
+/* Media queries */
+
+
