@@ -1,0 +1,101 @@
+@font-face {
+	font-family: 'permanent marker';
+	src: url("../media/Fonts/Permanent_Marker/PermanentMarker-Regular.ttf");
+}
+.About-header {
+	height: 850px;
+	padding-top: 150px;
+	background: linear-gradient(black -60%, transparent 100%),
+		        url("Media/zugspitze-1048995.jpg") no-repeat center / cover;
+	box-shadow: 0px 30px 70px -5px black;
+	border-radius: 0px 0px 10px 0px;
+}
+
+.header-span {
+	display: inline-block;
+	letter-spacing: 0.20em;
+	padding-bottom: 60px;
+	color: white;
+	font-family: 'permanent marker';
+	font-size: 1.8em;
+	
+}
+
+h3 {
+	color: black;
+}
+
+.brand-description {
+	width: 80%; 
+	margin: auto;
+	border-top: 4px solid rgba(163,130,35,1.00);
+	border-bottom: 4px solid rgba(163,130,35,1.00);
+	border-radius: 20px 20px 20px 10px;
+	padding: 35px 35px 45px;
+	
+	
+}
+
+.description-container {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
+.occupation-container {
+	height: 780px;
+	background: linear-gradient(white 0%, transparent 70%),
+		        linear-gradient(to top, white 0%, transparent 70%),
+		        url("Media/holiday-2880261.jpg") no-repeat center / cover;
+}
+
+.occupation {
+	text-align: center;
+	display: inline-block;
+	margin: 80px auto 60px;
+	color: white;
+	padding: 0px 40px 40px 40px;
+	border-top: rgba(163,130,35,1.00) solid 5px;
+	border-bottom: rgba(163,130,35,1.00) solid 5px;
+	border-radius: 20px 20px 20px 10px;
+	background: rgba(31,31,31,0.65);
+	box-shadow: 10px 20px 50px -10px black;
+}
+
+.brand-declarations {
+	margin-top: 10px;
+	height: 740px;
+	background: linear-gradient(white 0%, transparent 50%),
+		        linear-gradient(to top, white 0%, transparent 50%),
+		        linear-gradient(to right, white 0%, transparent 50%),
+		        linear-gradient(to left, white 0%, transparent 50%),
+		        url("Media/cosmos-1138041.jpg") no-repeat center / cover;
+}
+
+.mission, 
+.vision {
+	width: 45%;
+	text-align: center;
+	
+/*	color: white;*/
+}
+
+.mission {
+	float: left;
+	padding: 230px 10px 0px 50px;
+	
+	
+}
+
+.vision {
+	float: right;
+
+	padding: 230px 50px 0px 10px;
+}
+
+.margin-proof {
+	width: 45%;
+	margin: auto;
+}
